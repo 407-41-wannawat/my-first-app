@@ -1,16 +1,16 @@
 import time
 import streamlit as st
-# ส่วนหัวข้อ
+# Title
 st.title("เกมเติมคำศัพท์จับเวลา")
 # Default Session State
 if "ans1_val" not in st.session_state:
-   st.session_state.ans1_val=""
+   st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
-   st.session_state.ans2_val=""
+   st.session_state.ans2_val = ""
 if "ans3_val" not in st.session_state:
-   st.session_state.ans3_val=""
+   st.session_state.ans3_val = ""
 if "ans4_val" not in st.session_state:
-   st.session_state.ans4_val=""
+   st.session_state.ans4_val = ""
 # Clear Value Button
 def reset_game():
    st.session_state.ans1_val = "" # Box 1
@@ -20,8 +20,8 @@ def reset_game():
    st.session_state.start = time.time() # Restart Clock
    st.session_state.is_ended = False # Close Dialog
 # Message Box
-st.dialog("สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+@st.dialog("สรุปผลการเล่นเกม")
+def show_result_dialog(ans1, ans2, ans3, ans4):
    st.balloons()
    score = 0
    u_ans1 = ans1.strip().lower()
@@ -39,27 +39,27 @@ if u_ans2 == "fish":
    st.success("ข้อที่ 2 ถูกต้อง")
    score += 1
 else:
-   st.error(f"ข้อที่ 2 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans1}')")
+   st.error(f"ข้อที่ 2 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans2}')")
 # Check 3rd Ans.
 if u_ans3 == "motocycle":
    st.success("ข้อที่ 3 ถูกต้อง")
    score += 1
 else:
-   st.error (f"ข้อที่ 3 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans1}')")
+   st.error (f"ข้อที่ 3 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans3}')")
 # Check 4th Ans.
-if u_ans4 == "":
+if u_ans4 == "smartphone":
    st.success("ข้อที่ 4 ถูกต้อง")
    score += 1
 else:
-   st.error (f"ข้อที่ 4 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans1}')")
+   st.error (f"ข้อที่ 4 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans4}')")
 # Score
 st.info(f"ได้คะแนนรวม: {score} คะแนน")
-if score == 2:
+if score == 4:
   st.success(" You Win!!! ")
 else:
   st.error(" You Lose!!!! ")
 # Game Button
-st.button("เริ่มเล่นเกม", on_click=reset_game)
+st.button("เริ่มเล่นเกม/เริ่มใหม่", on_click=reset_game)
 # Countdown Bar
 if "start" in st.session_state and not st.session_state.get("is_ended",False):
    time_left = int(30 - (time.time() - st.session_state.start))
