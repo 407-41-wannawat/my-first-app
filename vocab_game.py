@@ -54,7 +54,7 @@ else:
    st.error (f"ข้อที่ 4 : ยังไม่ถูกต้อง(คุณตอบ '{u_ans1}')")
 # Score
 st.info(f"ได้คะแนนรวม: {score} คะแนน")
-if score == 2
+if score == 2:
   st.success(" You Win!!! ")
 else:
   st.error(" You Lose!!!! ")
