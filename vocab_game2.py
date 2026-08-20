@@ -69,7 +69,6 @@ ans2 = st.text_input(
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 # Send Button
-if st.session_state.start is not None and not st.session_state.is_ended:
     if st.button("📥 ส่งคำตอบ"):
        st.session_state.is_ended = True
        st.rerun()
@@ -80,4 +79,4 @@ if st.session_state.start is not None and not st.session_state.is_ended:
 if st.session_state.is_ended and st.session_state.start is not None:
    show_result_dialog(ans1, ans2)
 st.divider()
-st.write("นายวรรณวัฒน์ โภชกรณ์")
+st.write("นายวรรณวัฒน์ โภชกรณ์ ม.4/7 เลขที่ 41")
