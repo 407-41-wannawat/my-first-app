@@ -69,9 +69,10 @@ ans2 = st.text_input(
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 # Send Button
-if st.button("📥 ส่งคำตอบ"):
-   st.session_state.is_ended = True
-   st.rerun()
+if st.session_state.start is not None and not st.session_state.is_ended:
+   if st.button("📥 ส่งคำตอบ"):
+      st.session_state.is_ended = True
+      st.rerun()
 # Page Refresh
     time.sleep(1)
     st.rerun()
