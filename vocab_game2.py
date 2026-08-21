@@ -72,11 +72,11 @@ ans2 = st.text_input(
 )
 ans3 = st.text_input(
     "ข้อที่ 3 : Two wheel vahicle with engine is ____rcycle",
-    key="ans_val"
+    key="ans3_val"
 )
 ans4 = st.text_input(
     "ข้อที่ 4 : The thing that can call play a game or watch movie is ____tphone",
-    key="ans_val"
+    key="ans4_val"
 )
 if st.session_state.start is not None and not st.session_state.is_ended:
     if st.button("📥 ส่งคำตอบ"):
