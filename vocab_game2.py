@@ -87,4 +87,4 @@ if st.session_state.start is not None and not st.session_state.is_ended:
 if st.session_state.is_ended and st.session_state.start is not None:
     show_result_dialog(st.session_state.ans1_val, st.session_state.ans2_val, st.session_state.ans3_val, st.session_state.ans4_val)
 st.divider()
-st.write("นางสาวเดือนนคร สิทธิเมา ม.4/7 เลขที่ 18")
+st.write("นายวรรณวัตน์ โภชกรณ์ ม.4/7 เลขที่ 41")
