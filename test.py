@@ -1,36 +1,20 @@
-import tkinter as tk
+import streamlit as st
 
-# 1. สร้างหน้าต่างหลัก
-root = tk.Tk()
-root.title("ตัวอย่างปุ่มตัวเลือก")
-root.geometry("300x200")
+# 1. สร้างหัวข้อของหน้าเว็บ
+st.title("ตัวอย่างปุ่มตัวเลือกใน Streamlit")
 
-# 2. สร้างตัวแปรสำหรับเก็บค่าที่ผู้ใช้เลือก (กำหนดเป็นแบบ String)
-selected_flavor = tk.StringVar()
-selected_flavor.set("ช็อกโกแลต")  # ตั้งค่าเริ่มต้นให้เลือกเมนูนี้ไว้ก่อน
+# 2. สร้าง st.radio และเก็บค่าที่เลือกไว้ในตัวแปร genre
+genre = st.radio(
+    "คุณชอบภาพยนตร์แนวไหนมากที่สุด?",
+    options=["ตลก (Comedy)", "แอคชั่น (Action)", "ดราม่า (Drama)", "สยองขวัญ (Horror)"],
+    index=0 # กำหนดให้เลือกตัวเลือกแรกเป็นค่าเริ่มต้น (เปลี่ยนเป็น None ได้ถ้าไม่อยากให้เลือกอะไรเลย)
+)
 
-# ฟังก์ชันแสดงผลเมื่อคลิกปุ่มตรวจคำตอบ
-def show_choice():
-    label_result.config(text=f"คุณเลือกรส: {selected_flavor.get()}")
+# 3. นำค่าในตัวแปรมาใช้งานได้ทันที
+st.write(f"แนวภาพยนตร์ที่คุณชอบคือ: **{genre}**")
 
-# 3. สร้าง Radiobutton (ปุ่มตัวเลือก)
-# เชื่อมปุ่มทั้งหมดเข้าด้วยกันโดยใช้ variable=selected_flavor
-radio1 = tk.Radiobutton(root, text="รสช็อกโกแลต", variable=selected_flavor, value="ช็อกโกแลต")
-radio1.pack(anchor=tk.W, padx=20, pady=5)
-
-radio2 = tk.Radiobutton(root, text="รสวานิลลา", variable=selected_flavor, value="วานิลลา")
-radio2.pack(anchor=tk.W, padx=20, pady=5)
-
-radio3 = tk.Radiobutton(root, text="รสสตรอว์เบอร์รี", variable=selected_flavor, value="สตรอว์เบอร์รี")
-radio3.pack(anchor=tk.W, padx=20, pady=5)
-
-# 4. ปุ่มกดเพื่อยืนยันการเลือก
-btn = tk.Button(root, text="ยืนยัน", command=show_choice)
-btn.pack(pady=10)
-
-# 5. ป้ายกำกับแสดงผลลัพธ์
-label_result = tk.Label(root, text="โปรดเลือกรสชาติที่ต้องการ")
-label_result.pack(pady=10)
-
-# เริ่มต้นทำงานโปรแกรม
-root.mainloop()
+# ตัวอย่างการใช้เงื่อนไข (if-else) ร่วมกับปุ่มตัวเลือก
+if genre == "ตลก (Comedy)":
+    st.success("😀 คุณเป็นคนอารมณ์ดีนะเนี่ย!")
+elif genre == "สยองขวัญ (Horror)":
+    st.warning("👻 ระวังคืนนี้พบนอนไม่หลับนะครับ!")
