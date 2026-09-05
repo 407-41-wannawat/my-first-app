@@ -224,12 +224,12 @@ ans15 = st.text_input(
     key="ans15_val"
 )
 if st.session_state.start is not None and not st.session_state.is_ended:
-    if st.button("📥 ส่งคำตอบ"):
+   if st.button("📥 ส่งคำตอบ"):
         st.session_state.is_ended = True
         st.rerun()
-    time.sleep(1)
-    st.rerun()
+   time.sleep(1)
+   st.rerun()
 if st.session_state.is_ended and st.session_state.start is not None:
-    show_result_dialog(st.session_state.ans1_val, st.session_state.ans2_val, st.session_state.ans3_val, st.session_state.ans4_val, st.session_state.ans5_val, st.session_state.ans6_val, st.session_state.ans7_val, st.session_state.ans8_val, st.session_state.ans9_val, st.session_state.ans10_val, st.session_state.ans11_val, st.session_state.ans12_val, st.session_state.ans13_val, st.session_state.ans14_val, st.session_state.ans15_val)
+   show_result_dialog(st.session_state.ans1_val, st.session_state.ans2_val, st.session_state.ans3_val, st.session_state.ans4_val, st.session_state.ans5_val, st.session_state.ans6_val, st.session_state.ans7_val, st.session_state.ans8_val, st.session_state.ans9_val, st.session_state.ans10_val, st.session_state.ans11_val, st.session_state.ans12_val, st.session_state.ans13_val, st.session_state.ans14_val, st.session_state.ans15_val)
 st.divider()
 st.write("สมาชิกภายในกลุ่ม นางสาวเดือนนคร สิทธิเมา 18 นายปณิธาน แก้วอาจ 25 นายชวิน ไชยศรี 29 นายวรรณวัฒน์ โภชกรณ์ 41 ม.4/7")
