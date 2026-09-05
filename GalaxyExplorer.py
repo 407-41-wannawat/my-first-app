@@ -147,10 +147,10 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
      score += 5
   else:
      st.error(f"ข้อที่ 15: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans15}')")
-  st.info(f"ได้คะแนนรวม: {score} / 45 คะแนน")
-  if score == 45:
+  st.info(f"ได้คะแนนรวม: {score} / 48 คะแนน")
+  if score == 48:
      st.success("You are the master of Earth Science")
-  if score < 45:
+  if score < 48:
     st.success("ํYou Win")
   if score == 0:
    st.error("Kwai I Ngao Tam Mai Tam Mai Dai Suck Kor KUY")
