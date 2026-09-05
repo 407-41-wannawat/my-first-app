@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-st.title("Galaxy Explorer")
+st.title("Galaxy Explorer 👾🚀")
 if "ans1_val" not in st.session_state:
    st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
@@ -54,7 +54,7 @@ def reset_game():
   st.session_state.start = time.time()
   st.session_state.is_ended = False
 @st.dialog("สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10):
+def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans10, ans11, ans12, ans13, ans14, ans15):
   st.balloons()
   score = 0
   u_ans1 = ans1.strip().lower()
@@ -232,7 +232,4 @@ if st.session_state.start is not None and not st.session_state.is_ended:
 if st.session_state.is_ended and st.session_state.start is not None:
    show_result_dialog(st.session_state.ans1_val, st.session_state.ans2_val, st.session_state.ans3_val, st.session_state.ans4_val, st.session_state.ans5_val, st.session_state.ans6_val, st.session_state.ans7_val, st.session_state.ans8_val, st.session_state.ans9_val, st.session_state.ans10_val, st.session_state.ans11_val, st.session_state.ans12_val, st.session_state.ans13_val, st.session_state.ans14_val, st.session_state.ans15_val)
 st.divider()
-st.write("สมาชิกภายในกลุ่ม นางสาวเดือนนคร สิทธิเมา 18
-นายปณิธาน แก้วอาจ 25
-นายชวิน ไชยศรี 29
-นายวรรณวัฒน์ โภชกรณ์ 41 ม.4/7")
+st.write("สมาชิกภายในกลุ่ม นางสาวเดือนนคร สิทธิเมา 18 นายปณิธาน แก้วอาจ 25 นายชวิน ไชยศรี 29 นายวรรณวัฒน์ โภชกรณ์ 41 ม.4/7")
