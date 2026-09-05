@@ -157,4 +157,79 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
 st.button("เริ่มเล่นเกม / เริ่มต้นใหม่", on_click=reset_game)
 if st.session_state.start is not None and not st.session_state.is_ended:
     time_left = int(240 - (time.time() - st.session_state.start))
-  
+    if time_left > 0:
+        st.error(f"⏱️ เหลือเวลา: {time_left} วินาที")
+    else:
+        st.session_state.is_ended = True
+        st.rerun()
+st.divider()
+ans1 = st.text_input(
+    "ข้อที่ 1 :",
+    key="ans1_val"
+)
+ans2 = st.text_input(
+    "ข้อที่ 2 :",
+    key="ans2_val"
+)
+ans3 = st.text_input(
+    "ข้อที่ 3 :",
+    key="ans3_val"
+)
+ans4 = st.text_input(
+    "ข้อที่ 4 :",
+    key="ans4_val"
+)
+ans5 = st.text_input(
+    "ข้อที่ 5 :",
+    key="ans5_val"
+)
+ans6 = st.text_input(
+    "ข้อที่ 6 :",
+    key="ans6_val"
+)
+ans7 = st.text_input(
+    "ข้อที่ 7 :",
+    key="ans7_val"
+)
+ans8 = st.text_input(
+    "ข้อที่ 8 :",
+    key="ans8_val"
+)
+ans9 = st.text_input(
+    "ข้อที่ 9 :",
+    key="ans9_val"
+)
+ans10 = st.text_input(
+    "ข้อที่ 10 :",
+    key="ans10_val"
+)
+ans11 = st.text_input(
+    "ข้อที่ 11 :",
+    key="ans11_val"
+)
+ans12 = st.text_input(
+    "ข้อที่ 12 :",
+    key="ans12_val"
+)
+ans13 = st.text_input(
+    "ข้อที่ 13 :",
+    key="ans13_val"
+)
+ans14 = st.text_input(
+    "ข้อที่ 14 :",
+    key="ans14_val"
+)
+ans15 = st.text_input(
+    "ข้อที่ 15 :",
+    key="ans15_val"
+)
+if st.session_state.start is not None and not st.session_state.is_ended:
+    if st.button("📥 ส่งคำตอบ"):
+        st.session_state.is_ended = True
+        st.rerun()
+    time.sleep(1)
+    st.rerun()
+if st.session_state.is_ended and st.session_state.start is not None:
+    show_result_dialog(st.session_state.ans1_val, st.session_state.ans2_val, st.session_state.ans3_val, st.session_state.ans4_val, st.session_state.ans5_val, st.session_state.ans6_val, st.session_state.ans7_val, st.session_state.ans8_val, st.session_state.ans9_val, st.session_state.ans10_val, st.session_state.ans11_val, st.session_state.ans12_val, st.session_state.ans13_val, st.session_state.ans14_val, st.session_state.ans15_val)
+st.divider()
+st.write("สมาชิกภายในกลุ่ม นางสาวเดือนนคร สิทธิเมา 18 นายปณิธาน แก้วอาจ 25 นายชวิน ไชยศรี 29 นายวรรณวัฒน์ โภชกรณ์ 41 ม.4/7")
