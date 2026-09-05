@@ -89,65 +89,65 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
      st.error(f"ข้อที่ 3: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans3}')")
   if u_ans4 == "":
      st.success("ข้อที่ 4 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 2
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans4}')")
   if u_ans5 == "":
      st.success("ข้อที่ 5 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 2
   else:
      st.error(f"ข้อที่ 5: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans5}')")
   if u_ans6 == "":
      st.success("ข้อที่ 6 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 2
   else:
      st.error(f"ข้อที่ 6: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans6}')")
   if u_ans7 == "":
      st.success("ข้อที่ 7 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 3
   else:
      st.error(f"ข้อที่ 7: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans7}')")
   if u_ans8 == "":
      st.success("ข้อที่ 8 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 3
   else:
      st.error(f"ข้อที่ 8: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans8}')")
   if u_ans9 == "":
      st.success("ข้อที่ 9 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 3
   else:
      st.error(f"ข้อที่ 9: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans9}')")
   if u_ans10 == "":
      st.success("ข้อที่ 10 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 10: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans10}')")
   if u_ans11 == "":
      st.success("ข้อที่ 11 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans11}')")
   if u_ans12 == "":
      st.success("ข้อที่ 12 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 12: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans12}')")
   if u_ans13 == "":
      st.success("ข้อที่ 13 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 13: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans13}')")
   if u_ans14 == "":
      st.success("ข้อที่ 14 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans14}')")
   if u_ans15 == "":
      st.success("ข้อที่ 15 ถูกต้องนะคร้าบบบบบบ")
-     score += 1
+     score += 5
   else:
      st.error(f"ข้อที่ 15: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans15}')")
-  st.info(f"ได้คะแนนรวม: {score} / คะแนน")
+  st.info(f"ได้คะแนนรวม: {score} / 45 คะแนน")
   if score == 45:
      st.success("You are the master of Earth Science")
   if score < 45:
