@@ -163,14 +163,12 @@ if st.session_state.start is not None and not st.session_state.is_ended:
         st.session_state.is_ended = True
         st.rerun()
 st.divider()
-ans1 = st.text_input(
-    "ข้อที่ 1 : 1.)Which planet is closest to the Sun? (1 point)
+ans1 = st.text_input("ข้อที่ 1 : Which planet is closest to the Sun?
 A.Earth
 B.Venus
 C.Mercury
 D.Mars
-",
-    key="ans1_val"
+",key="ans1_val"
 )
 ans2 = st.text_input(
     "ข้อที่ 2 :",
