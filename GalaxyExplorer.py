@@ -72,77 +72,77 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
   u_ans13 = ans13.strip().lower()
   u_ans14 = ans14.strip().lower()
   u_ans15 = ans15.strip().lower()
-  if u_ans1 == "":
+  if u_ans1 == "C":
      st.success("ข้อที่ 1 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans1}')")
-  if u_ans2 == "":
+  if u_ans2 == "B":
      st.success("ข้อที่ 2 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 2: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans2}')")
-  if u_ans3 == "":
+  if u_ans3 == "C":
      st.success("ข้อที่ 3 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 3: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans3}')")
-  if u_ans4 == "":
+  if u_ans4 == "C":
      st.success("ข้อที่ 4 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans4}')")
-  if u_ans5 == "":
+  if u_ans5 == "B":
      st.success("ข้อที่ 5 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 5: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans5}')")
-  if u_ans6 == "":
+  if u_ans6 == "D":
      st.success("ข้อที่ 6 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 6: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans6}')")
-  if u_ans7 == "":
+  if u_ans7 == "B":
      st.success("ข้อที่ 7 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 7: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans7}')")
-  if u_ans8 == "":
+  if u_ans8 == "C":
      st.success("ข้อที่ 8 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 8: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans8}')")
-  if u_ans9 == "":
+  if u_ans9 == "B":
      st.success("ข้อที่ 9 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 9: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans9}')")
-  if u_ans10 == "":
+  if u_ans10 == "C":
      st.success("ข้อที่ 10 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 10: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans10}')")
-  if u_ans11 == "":
+  if u_ans11 == "B":
      st.success("ข้อที่ 11 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans11}')")
-  if u_ans12 == "":
+  if u_ans12 == "A":
      st.success("ข้อที่ 12 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 12: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans12}')")
-  if u_ans13 == "":
+  if u_ans13 == "B":
      st.success("ข้อที่ 13 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 13: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans13}')")
-  if u_ans14 == "":
+  if u_ans14 == "B":
      st.success("ข้อที่ 14 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans14}')")
-  if u_ans15 == "":
+  if u_ans15 == "C":
      st.success("ข้อที่ 15 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
@@ -164,7 +164,12 @@ if st.session_state.start is not None and not st.session_state.is_ended:
         st.rerun()
 st.divider()
 ans1 = st.text_input(
-    "ข้อที่ 1 :",
+    "ข้อที่ 1 : 1.)Which planet is closest to the Sun? (1 point)
+A.Earth
+B.Venus
+C.Mercury
+D.Mars
+",
     key="ans1_val"
 )
 ans2 = st.text_input(
