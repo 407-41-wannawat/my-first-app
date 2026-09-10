@@ -170,61 +170,103 @@ ans1 = st.radio(
     key="ans1_val",
     label_visibility="collapsed",
 )
-ans2 = st.text_input(
-    "ข้อที่ 2 :",
-    key="ans2_val"
+st.write("ข้อที่ 2 : What is the largest planet in our Solar System?")
+ans2 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Saturn", "B. Jupiter", "C. Mercury", "D. Mars"],
+    key="ans2_val",
+    label_visibility="collapsed",
 )
-ans3 = st.text_input(
-    "ข้อที่ 3 :",
-    key="ans3_val"
+st.write("ข้อที่ 3 : What force keeps planets in orbit around the Sun?")
+ans3 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Friction", "B. Magnetism", "C. Gravity", "D. Elctricity"],
+    key="ans3_val",
+    label_visibility="collapsed",
 )
-ans4 = st.text_input(
-    "ข้อที่ 4 :",
-    key="ans4_val"
+st.write("ข้อที่ 4 : Why does the Moon appear to change during a month?")
+ans4 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. The moon changes its shape.", "B. Earth’s shadow always covers part of the moon", "C. We see different portions of the Moon’s sunlit side.", "D. Clouds cover different parts of the moon."],
+    key="ans4_val",
+    label_visibility="collapsed",
 )
-ans5 = st.text_input(
-    "ข้อที่ 5 :",
-    key="ans5_val"
+st.write("ข้อที่ 5 : Which statement about seasons on Earth is correct?")
+ans5 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Earth is much closer to the Sun in summer.", "B. Earth’s axis is tilted as it orbits the Sun.", "C. The Sun becomes hotter in summer.", "D. Earth rotates faster in summer."],
+    key="ans5_val",
+    label_visibility="collapsed",
 )
-ans6 = st.text_input(
-    "ข้อที่ 6 :",
-    key="ans6_val"
+st.write("ข้อที่ 6 : A light-year is a unit used to measure what?")
+ans6 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Time", "B. Brightness", "C. Temperature", "D. Distance"],
+    key="ans6_val",
+    label_visibility="collapsed",
 )
-ans7 = st.text_input(
-    "ข้อที่ 7 :",
-    key="ans7_val"
+st.write("ข้อที่ 7 : If a star appears red, what does this generally indicate its surface temperature?")
+ans7 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. It is hotter.", "B. It is cooler.", "C. They have the same temperature.", "D. Cooler cannot indicate temperature."],
+    key="ans7_val",
+    label_visibility="collapsed",
 )
-ans8 = st.text_input(
-    "ข้อที่ 8 :",
-    key="ans8_val"
+st.write("ข้อที่ 8 : Why do we always see nearly the same side of the Moon from Earth?")
+ans8 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. The Moon does not rotate.", "B. Earth blocks the other side.", "C. The Moon’s rotation period equals its orbital period.", "D. The Moon is smaller than Earth."],
+    key="ans8_val",
+    label_visibility="collapsed",
 )
-ans9 = st.text_input(
-    "ข้อที่ 9 :",
-    key="ans9_val"
+st.write("ข้อที่ 9 : If the distance between two objects increases, what happens to the gravitational force between them?")
+ans9 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. It increases.", "B. It decreases.", "C. It stays the same.", "D. It becomes zero immediately."],
+    key="ans9_val",
+    label_visibility="collapsed",
 )
-ans10 = st.text_input(
-    "ข้อที่ 10 :",
-    key="ans10_val"
+st.write("ข้อที่ 10 : A planet takes longer to orbit the Sun than Earth. Which of the following is most likely true?")
+ans10 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. It is always smaller than Earth.", "B. It is always closer to the Sun than Earth.", "C. Its orbital period is longer than one Earth year.", "D. It rotates more slowly than Earth."],
+    key="ans10_val",
+    label_visibility="collapsed",
 )
-ans11 = st.text_input(
-    "ข้อที่ 11 :",
-    key="ans11_val"
+st.write("ข้อที่ 11 : A planet has an orbital period of 8 Earth years. Approximately how many times farther from the Sun is it than Earth?")
+ans11 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. 2 AU", "B. 4 AU", "C. 8 AU", "D. 16 AU"],
+    key="ans11_val",
+    label_visibility="collapsed",
 )
-ans12 = st.text_input(
-    "ข้อที่ 12 :",
-    key="ans12_val"
+st.write("ข้อที่ 12 : Two stars have the same apparent brightness, but Star A. is twice as far from Earth as Star B. Which statement is correct?")
+ans12 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Star A is intrinsically brighter than Star B.", "B. Star B is intrinsically brighter than Star A.", "C. Both stars have the same intrinsic brightness.", "D. Distance does not affect apparent brightness."],
+    key="ans1_val",
+    label_visibility="collapsed",
 )
-ans13 = st.text_input(
-    "ข้อที่ 13 :",
-    key="ans13_val"
+st.write("ข้อที่ 13 : A star’s spectrum shows that its spectral lines are shifted toward longer wavelengths. what does this most likely indicate?")
+ans13 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. The star is moving to ward Earth.", "B. The star is moving away from Earth.", "C. The star is becoming hotter.", "D. The star has stopped moving."],
+    key="ans13_val",
+    label_visibility="collapsed",
 )
-ans14 = st.text_input(
-    "ข้อที่ 14 :",
-    key="ans14_val"
+st.write("ข้อที่ 14 : Which phenomenon is primarily responsible for the apparent retrograde motion of Mars as observed from Earth?")
+ans14 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Mars temporarily reversing its orbital direction.", "B. Earth overtaking Mars in their respective orbits.", "C. The gravitational influence of Jupiter.", "D. The precession of Earth's rotational axis."],
+    key="ans14_val",
+    label_visibility="collapsed",
 )
-ans15 = st.text_input(
-    "ข้อที่ 15 :",
-    key="ans15_val"
+st.write("ข้อที่ 1 : What is the primary physical mechanism that causes a Type Ia supernova?")
+ans15 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. The core collapse of a massive star.", "B. The merger of two neutron stars.", "C. The thermonuclear runaway of a carbon–oxygen white dwarf.", "D. The gravitational collapse of a molecular cloud."],
+    key="ans15_val",
+    label_visibility="collapsed",
 )
 if st.session_state.start is not None and not st.session_state.is_ended:
    if st.button("📥 ส่งคำตอบ"):
