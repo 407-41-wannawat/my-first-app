@@ -132,7 +132,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
      score += 5
   else:
      st.error(f"ข้อที่ 12: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans12}')")
-  if u_ans13 == "a. star a is intrinsically brighter than star b.":
+  if u_ans13 == "b. the star is moving away from earth.":
      st.success("ข้อที่ 13 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
