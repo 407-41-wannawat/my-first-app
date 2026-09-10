@@ -244,7 +244,7 @@ st.write("ข้อที่ 12 : Two stars have the same apparent brightness, b
 ans12 = st.radio(
     label="เลือกคำตอบ:",
     options=["A. Star A is intrinsically brighter than Star B.", "B. Star B is intrinsically brighter than Star A.", "C. Both stars have the same intrinsic brightness.", "D. Distance does not affect apparent brightness."],
-    key="ans1_val",
+    key="ans12_val",
     label_visibility="collapsed",
 )
 st.write("ข้อที่ 13 : A star’s spectrum shows that its spectral lines are shifted toward longer wavelengths. what does this most likely indicate?")
