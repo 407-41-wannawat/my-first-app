@@ -151,7 +151,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
   if score == 48:
      st.success("You are the master of Earth Science 👍❤️")
   if score < 48:
-    st.success("ํYou Win 😁")
+    st.success("You Win 😁")
   if score == 0:
    st.error("Kwai I Ngao Tam Mai Tam Mai Dai Suck Kor KUY")
 st.button("เริ่มเล่นเกม / เริ่มต้นใหม่", on_click=reset_game)
@@ -261,7 +261,7 @@ ans14 = st.radio(
     key="ans14_val",
     label_visibility="collapsed",
 )
-st.write("ข้อที่ 1 : What is the primary physical mechanism that causes a Type Ia supernova?")
+st.write("ข้อที่ 15 : What is the primary physical mechanism that causes a Type Ia supernova?")
 ans15 = st.radio(
     label="เลือกคำตอบ:",
     options=["A. The core collapse of a massive star.", "B. The merger of two neutron stars.", "C. The thermonuclear runaway of a carbon–oxygen white dwarf.", "D. The gravitational collapse of a molecular cloud."],
