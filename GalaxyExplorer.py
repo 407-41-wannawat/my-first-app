@@ -72,77 +72,77 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
   u_ans13 = ans13.strip().lower()
   u_ans14 = ans14.strip().lower()
   u_ans15 = ans15.strip().lower()
-  if u_ans1 == "a. earth":
+  if u_ans1 == "c. mercury":
      st.success("ข้อที่ 1 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans1}')")
-  if u_ans2 == "B":
+  if u_ans2 == "b. jupiter":
      st.success("ข้อที่ 2 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 2: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans2}')")
-  if u_ans3 == "C":
+  if u_ans3 == "c. gravity":
      st.success("ข้อที่ 3 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
      st.error(f"ข้อที่ 3: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans3}')")
-  if u_ans4 == "C":
+  if u_ans4 == "c. we see different portions of the moon’s sunlit side.":
      st.success("ข้อที่ 4 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans4}')")
-  if u_ans5 == "B":
+  if u_ans5 == "b. earth’s axis is tilted as it orbits the sun.":
      st.success("ข้อที่ 5 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 5: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans5}')")
-  if u_ans6 == "D":
+  if u_ans6 == "d. distance":
      st.success("ข้อที่ 6 ถูกต้องนะคร้าบบบบบบ")
      score += 2
   else:
      st.error(f"ข้อที่ 6: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans6}')")
-  if u_ans7 == "B":
+  if u_ans7 == "b. it is cooler.":
      st.success("ข้อที่ 7 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 7: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans7}')")
-  if u_ans8 == "C":
+  if u_ans8 == "c. the moon’s rotation period equals its orbital period.":
      st.success("ข้อที่ 8 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 8: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans8}')")
-  if u_ans9 == "B":
+  if u_ans9 == "b. it decreases.":
      st.success("ข้อที่ 9 ถูกต้องนะคร้าบบบบบบ")
      score += 3
   else:
      st.error(f"ข้อที่ 9: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans9}')")
-  if u_ans10 == "C":
+  if u_ans10 == "c. its orbital period is longer than one earth year.":
      st.success("ข้อที่ 10 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 10: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans10}')")
-  if u_ans11 == "B":
+  if u_ans11 == "b. 4 au":
      st.success("ข้อที่ 11 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans11}')")
-  if u_ans12 == "A":
+  if u_ans12 == "a. star a is intrinsically brighter than star b.":
      st.success("ข้อที่ 12 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 12: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans12}')")
-  if u_ans13 == "B":
+  if u_ans13 == "a. star a is intrinsically brighter than star b.":
      st.success("ข้อที่ 13 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 13: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans13}')")
-  if u_ans14 == "B":
+  if u_ans14 == "b. earth overtaking mars in their respective orbits.":
      st.success("ข้อที่ 14 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
      st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans14}')")
-  if u_ans15 == "C":
+  if u_ans15 == "c. the thermonuclear runaway of a carbon–oxygen white dwarf.":
      st.success("ข้อที่ 15 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
