@@ -126,7 +126,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
      st.success("ข้อที่ 11 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
-     st.error(f"ข้อที่ 1: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans11}')")
+     st.error(f"ข้อที่ 11: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans11}')")
   if u_ans12 == "a. star a is intrinsically brighter than star b.":
      st.success("ข้อที่ 12 ถูกต้องนะคร้าบบบบบบ")
      score += 5
@@ -141,7 +141,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
      st.success("ข้อที่ 14 ถูกต้องนะคร้าบบบบบบ")
      score += 5
   else:
-     st.error(f"ข้อที่ 4: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans14}')")
+     st.error(f"ข้อที่ 14: ยังไม่ถูกต้องน้าาาาาา (คุณตอบ '{u_ans14}')")
   if u_ans15 == "c. the thermonuclear runaway of a carbon–oxygen white dwarf.":
      st.success("ข้อที่ 15 ถูกต้องนะคร้าบบบบบบ")
      score += 5
