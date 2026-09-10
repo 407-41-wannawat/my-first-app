@@ -72,7 +72,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
   u_ans13 = ans13.strip().lower()
   u_ans14 = ans14.strip().lower()
   u_ans15 = ans15.strip().lower()
-  if u_ans1 == "C":
+  if u_ans1 == "a. earth":
      st.success("ข้อที่ 1 ถูกต้องนะคร้าบบบบบบ")
      score += 1
   else:
