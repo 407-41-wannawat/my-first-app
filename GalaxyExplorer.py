@@ -163,12 +163,12 @@ if st.session_state.start is not None and not st.session_state.is_ended:
         st.session_state.is_ended = True
         st.rerun()
 st.divider()
-ans1 = st.text_input("ข้อที่ 1 : Which planet is closest to the Sun?
-A.Earth
-B.Venus
-C.Mercury
-D.Mars
-",key="ans1_val"
+st.write("ข้อที่ 1 : Which planet is closest to the Sun?")
+ans1 = st.radio(
+    label="เลือกคำตอบ:",
+    options=["A. Earth", "B. Venus", "C. Mercury", "D. Mars"],
+    key="ans1_val",
+    label_visibility="collapsed",
 )
 ans2 = st.text_input(
     "ข้อที่ 2 :",
