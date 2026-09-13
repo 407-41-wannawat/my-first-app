@@ -153,7 +153,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
   if score < 48:
     st.success("You Win 😁")
   if score == 0:
-   st.error("Kwai I Ngao Tam Mai Tam Mai Dai Suck Kor KUY")
+   st.error("You need to practice more!!!!!!!!")
 st.button("เริ่มเล่นเกม / เริ่มต้นใหม่", on_click=reset_game)
 if st.session_state.start is not None and not st.session_state.is_ended:
     time_left = int(240 - (time.time() - st.session_state.start))
